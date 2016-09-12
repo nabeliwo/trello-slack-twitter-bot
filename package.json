@@ -1,0 +1,27 @@
+{
+  "name": "trello-slack-twitter-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabeliwo/trello-slack-twitter-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nabeliwo/trello-slack-twitter-bot/issues"
+  },
+  "homepage": "https://github.com/nabeliwo/trello-slack-twitter-bot#readme",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "config": "^1.21.0",
+    "cron": "^1.1.0",
+    "moment": "^2.15.0",
+    "twitter": "^1.4.0"
+  }
+}

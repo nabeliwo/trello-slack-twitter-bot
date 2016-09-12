@@ -1,7 +1,8 @@
+const config = require('config');
 const CronJob = require('cron').CronJob;
 const app = require('./modules/app');
 const job = new CronJob({
-  cronTime: '00 00 23 * * *',
+  cronTime: config.cron.time,
   onTick: app,
   start: false,
   timeZone: 'Asia/Tokyo'

@@ -34,5 +34,22 @@ Trelloの特定のボードの中から2つのリスト(今日やるべきこと
     "time": "[処理を実行する時間。詳しくは、node-cronの時間の部分]"
   }
 }
+```
+
+## 始め方
 
 ```
+$ git clone https://github.com/nabeliwo/trello-slack-twitter-bot.git
+$ cd trello-slack-twitter-bot
+$ npm install
+```
+
+ここで `./config` に設定ファイルをおきます。
+
+```
+$ npm start // start forever task.
+```
+
+foreverを使ってNodeの処理をデーモン化しています。  
+停止するには、foreverコマンドを直接叩く必要があるため、 `npm i -g forever` でグローバルインストールをして `forever stop [id]` で停止します。  
+[id]の部分は `forever list` を叩くことで確認することができます。

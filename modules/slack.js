@@ -14,7 +14,7 @@ ${task.doneTask.map(item =>
 ${task.remainTask.map(item =>
   `・[ ${item.label} ] ${item.name}`).join('\n')
 }\n
-■ 進捗率 -> ${Math.floor(task.doneTask.length / task.taskLen * 100)}％
+■ 進捗率 -> ${Math.floor(task.doneTask.length / task.taskLen * 100) || 0}％
 \`\`\`
 `;
 

@@ -13,7 +13,7 @@ const getTemplate = task => `
 今日のnabeliwoのタスク進捗です。
 ・達成したタスク => ${task.doneTask.length}個
 ・残ったタスク => ${task.remainTask.length}個
-・進捗率 => ${Math.floor(task.doneTask.length / task.taskLen * 100)}％
+・進捗率 => ${Math.floor(task.doneTask.length / task.taskLen * 100) || 0}％
 #trello_slack_twitter_bot https://github.com/nabeliwo/trello-slack-twitter-bot
 `;
 
